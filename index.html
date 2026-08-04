@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>TaskTact | Smart Task Manager</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+
+</head>
+
+<body>
+
+<!--================ Loader ================-->
+
+<div id="loader">
+
+<div class="spinner"></div>
+
+<h2>TaskTact</h2>
+
+</div>
+
+<!--================ Header ================-->
+
+<header>
+
+<nav class="navbar">
+
+<a href="#" class="logo">
+
+<i class="fa-solid fa-list-check"></i>
+
+TaskTact
+
+</a>
+
+<ul class="nav-menu">
+
+<li><a href="#home">Home</a></li>
+
+<li><a href="#features">Features</a></li>
+
+<li><a href="#dashboard">Dashboard</a></li>
+
+<li><a href="#tasks">Tasks</a></li>
+
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+<div class="nav-buttons">
+
+<button id="themeToggle">
+
+<i class="fa-solid fa-moon"></i>
+
+</button>
+
+<button id="menuBtn">
+
+<i class="fa-solid fa-bars"></i>
+
+</button>
+
+</div>
+
+</nav>
+
+</header>
+
+<!--================ Hero ================-->
+
+<section id="home" class="hero">
+
+<div class="hero-text">
+
+<h1>
+
+Manage Your Tasks
+
+<span>Smarter</span>
+
+</h1>
+
+<p>
+
+An intelligent task management system designed for students,
+developers and professionals.
+
+</p>
+
+<div class="hero-buttons">
+
+<a href="#tasks" class="btn primary">
+
+Get Started
+
+</a>
+
+<a href="#features" class="btn secondary">
+
+Learn More
+
+</a>
+
+</div>
+
+</div>
+
+<div class="hero-card">
+
+<h3>
+
+Today's Progress
+
+</h3>
+
+<div class="progress-circle">
+
+75%
+
+</div>
+
+<ul>
+
+<li>✔ Python Assignment</li>
+
+<li>✔ DBMS Notes</li>
+
+<li>⬜ Workout</li>
+
+<li>⬜ Mini Project</li>
+
+</ul>
+
+</div>
+
+</section>
+
+<!--================ Features ================-->
+
+<section id="features">
+
+<h2 class="title">
+
+Why Choose TaskTact?
+
+</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<i class="fa-solid fa-plus"></i>
+
+<h3>Add Tasks</h3>
+
+<p>Create unlimited tasks.</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-pen"></i>
+
+<h3>Edit</h3>
+
+<p>Edit tasks anytime.</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-trash"></i>
+
+<h3>Delete</h3>
+
+<p>Remove unnecessary tasks.</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-chart-line"></i>
+
+<h3>Track Progress</h3>
+
+<p>Monitor productivity.</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!--================ Dashboard ================-->
+
+<section id="dashboard">
+
+<h2 class="title">
+
+Dashboard Preview
+
+</h2>
+
+<div class="dashboard">
+
+<div class="left">
+
+<h3>Today's Tasks</h3>
+
+<div class="task completed">
+
+✔ Python Coding
+
+</div>
+
+<div class="task">
+
+⬜ DSA Practice
+
+</div>
+
+<div class="task completed">
+
+✔ College Assignment
+
+</div>
+
+<div class="task">
+
+⬜ Workout
+
+</div>
+
+</div>
+
+<div class="right">
+
+<h1 id="counter">
+
+0%
+
+</h1>
+
+<p>
+
+Completed
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!--================ Task Manager ================-->
+
+<section id="tasks">
+
+<h2 class="title">
+
+Task Manager
+
+</h2>
+
+<div class="task-manager">
+
+<div class="input-group">
+
+<input
+id="taskInput"
+type="text"
+placeholder="Enter your task">
+
+<button id="addTask">
+
+Add
+
+</button>
+
+</div>
+
+<ul id="taskList">
+
+</ul>
+
+</div>
+
+</section>
+
+<!--================ Contact ================-->
+
+<section id="contact">
+
+<h2 class="title">
+
+Contact Us
+
+</h2>
+
+<form id="contactForm">
+
+<input
+type="text"
+placeholder="Name"
+required>
+
+<input
+type="email"
+placeholder="Email"
+required>
+
+<textarea
+placeholder="Message"
+required>
+
+</textarea>
+
+<button>
+
+Send Message
+
+</button>
+
+</form>
+
+</section>
+
+<footer>
+
+<h2>
+
+TaskTact
+
+</h2>
+
+<p>
+
+Built with HTML • CSS • JavaScript
+
+</p>
+
+<p>
+
+© 2026 All Rights Reserved
+
+</p>
+
+</footer>
+
+<button id="scrollTop">
+
+<i class="fa-solid fa-arrow-up"></i>
+
+</button>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

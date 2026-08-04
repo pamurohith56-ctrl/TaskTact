@@ -1,0 +1,557 @@
+/* =========================
+   TaskTact Smart Task Manager
+   CSS
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    scroll-behavior:smooth;
+}
+
+:root{
+    --primary:#6366f1;
+    --secondary:#8b5cf6;
+    --dark:#111827;
+    --light:#f8fafc;
+    --card:#ffffff;
+    --text:#1f2937;
+    --shadow:0 10px 30px rgba(0,0,0,0.1);
+}
+
+
+body{
+    background:var(--light);
+    color:var(--text);
+}
+
+
+/* ================= Loader ================= */
+
+#loader{
+    position:fixed;
+    height:100vh;
+    width:100%;
+    background:white;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    z-index:9999;
+}
+
+
+.spinner{
+
+    width:60px;
+    height:60px;
+    border:6px solid #ddd;
+    border-top-color:var(--primary);
+    border-radius:50%;
+    animation:spin 1s linear infinite;
+
+}
+
+
+@keyframes spin{
+
+    100%{
+        transform:rotate(360deg);
+    }
+
+}
+
+
+
+/* ================= Header ================= */
+
+
+header{
+
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:white;
+    box-shadow:var(--shadow);
+
+}
+
+
+.navbar{
+
+    max-width:1200px;
+    margin:auto;
+    padding:20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+}
+
+
+.logo{
+
+    text-decoration:none;
+    font-size:26px;
+    font-weight:700;
+    color:var(--primary);
+
+}
+
+
+.logo i{
+    margin-right:8px;
+}
+
+
+.nav-menu{
+
+    display:flex;
+    list-style:none;
+    gap:30px;
+
+}
+
+
+.nav-menu a{
+
+    text-decoration:none;
+    color:var(--text);
+    font-weight:500;
+
+}
+
+
+.nav-menu a:hover{
+
+    color:var(--primary);
+
+}
+
+
+
+.nav-buttons button{
+
+    border:none;
+    background:none;
+    font-size:22px;
+    cursor:pointer;
+    margin-left:15px;
+
+}
+
+
+
+/* ================= Hero ================= */
+
+
+.hero{
+
+    max-width:1200px;
+    margin:auto;
+    padding:80px 20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:40px;
+
+}
+
+
+
+.hero-text{
+
+    max-width:600px;
+
+}
+
+
+.hero h1{
+
+    font-size:55px;
+    line-height:1.2;
+
+}
+
+
+.hero h1 span{
+
+    color:var(--primary);
+
+}
+
+
+.hero p{
+
+    margin:25px 0;
+    font-size:18px;
+    color:#64748b;
+
+}
+
+
+
+.btn{
+
+    padding:14px 30px;
+    border-radius:30px;
+    text-decoration:none;
+    display:inline-block;
+    margin-right:15px;
+    font-weight:600;
+
+}
+
+
+.primary{
+
+    background:var(--primary);
+    color:white;
+
+}
+
+
+.secondary{
+
+    border:2px solid var(--primary);
+    color:var(--primary);
+
+}
+
+
+
+.hero-card{
+
+    background:white;
+    padding:30px;
+    border-radius:25px;
+    box-shadow:var(--shadow);
+    width:330px;
+
+}
+
+
+
+.progress-circle{
+
+    width:120px;
+    height:120px;
+    margin:20px auto;
+    border-radius:50%;
+    background:linear-gradient(135deg,var(--primary),var(--secondary));
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:30px;
+    font-weight:bold;
+
+}
+
+
+
+.hero-card ul{
+
+    list-style:none;
+    line-height:35px;
+
+}
+
+
+
+/* ================= Sections ================= */
+
+
+section{
+
+    padding:80px 20px;
+
+}
+
+
+.title{
+
+    text-align:center;
+    font-size:35px;
+    margin-bottom:50px;
+
+}
+
+
+
+
+/* ================= Cards ================= */
+
+
+.cards{
+
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+
+}
+
+
+.card{
+
+    background:white;
+    padding:30px;
+    text-align:center;
+    border-radius:20px;
+    box-shadow:var(--shadow);
+    transition:.3s;
+
+}
+
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+
+.card i{
+
+    font-size:40px;
+    color:var(--primary);
+    margin-bottom:20px;
+
+}
+
+
+
+
+/* ================= Dashboard ================= */
+
+
+.dashboard{
+
+    max-width:1000px;
+    margin:auto;
+    background:white;
+    padding:40px;
+    border-radius:25px;
+    box-shadow:var(--shadow);
+    display:flex;
+    justify-content:space-between;
+
+}
+
+
+.task{
+
+    padding:15px;
+    margin:10px 0;
+    background:#f1f5f9;
+    border-radius:10px;
+
+}
+
+
+.completed{
+
+    background:#dcfce7;
+
+}
+
+
+.right{
+
+    text-align:center;
+}
+
+
+#counter{
+
+    font-size:70px;
+    color:var(--primary);
+
+}
+
+
+
+
+/* ================= Task Manager ================= */
+
+
+.task-manager{
+
+    max-width:600px;
+    margin:auto;
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:var(--shadow);
+
+}
+
+
+.input-group{
+
+    display:flex;
+    gap:10px;
+
+}
+
+
+.input-group input{
+
+    flex:1;
+    padding:15px;
+    border:1px solid #ddd;
+    border-radius:10px;
+
+}
+
+
+
+button{
+
+    cursor:pointer;
+
+}
+
+
+.input-group button,
+form button{
+
+    background:var(--primary);
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:10px;
+
+}
+
+
+
+
+#taskList li{
+
+    list-style:none;
+    margin-top:15px;
+    padding:15px;
+    background:#f1f5f9;
+    border-radius:10px;
+
+}
+
+
+
+/* ================= Contact ================= */
+
+
+form{
+
+    max-width:600px;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+
+}
+
+
+form input,
+form textarea{
+
+    padding:15px;
+    border-radius:10px;
+    border:1px solid #ddd;
+
+}
+
+
+textarea{
+
+    height:150px;
+
+}
+
+
+
+
+/* ================= Footer ================= */
+
+
+footer{
+
+    text-align:center;
+    background:#111827;
+    color:white;
+    padding:40px;
+
+}
+
+
+
+/* ================= Scroll Button ================= */
+
+
+#scrollTop{
+
+    position:fixed;
+    right:25px;
+    bottom:25px;
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    border:none;
+    background:var(--primary);
+    color:white;
+    display:none;
+
+}
+
+
+
+/* ================= Mobile ================= */
+
+
+@media(max-width:900px){
+
+.nav-menu{
+
+    display:none;
+
+}
+
+
+.hero{
+
+    flex-direction:column;
+    text-align:center;
+
+}
+
+
+.hero h1{
+
+    font-size:40px;
+
+}
+
+
+.cards{
+
+    grid-template-columns:1fr;
+
+}
+
+
+.dashboard{
+
+    flex-direction:column;
+    gap:30px;
+
+}
+
+
+}
+
+
